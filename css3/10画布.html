@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+  <title>H5网页布局 </title>
+  <style type="text/css">
+  </style>
+ </head>
+ <body>
+ <canvas id="my_canvas" width="400px" height="400px" style="border:1px solid #ff00ff">
+ <script type="text/javascript">
+	var my_huabu = document.getElementById("my_canvas");
+	var my_huabi = my_huabu.getContext("2d")
+
+	//直线
+	my_huabi.strokeStyle="#ff0000";//非填充用的画笔
+	//1.开始一个新的路径
+	my_huabi.beginPath();
+	//2.先把画笔移动到起始点
+	my_huabi.moveTo(10,10);
+	//3.把画笔移动到另外一个点
+	my_huabi.lineTo(10,100);
+	my_huabi.closePath();
+	my_huabi.stroke();
+
+	//空心三角
+	my_huabi.beginPath();
+	my_huabi.moveTo(50,10);
+	my_huabi.lineTo(50,100);
+	my_huabi.lineTo(100,100);
+	my_huabi.closePath();
+	my_huabi.stroke();
+
+	//实心三角
+	my_huabi.beginPath();
+	my_huabi.moveTo(120,10);
+	my_huabi.lineTo(120,100);
+	my_huabi.lineTo(170,100);
+	my_huabi.closePath();
+	my_huabi.fillStyle="green";
+	my_huabi.fill();
+	
+	//空心的矩形
+	my_huabi.rect(200,10,120,90);
+	my_huabi.stroke();
+
+	//填充的矩形
+	my_huabi.fillRect(10,150,120,90);
+	my_huabi.stroke();
+
+	//空心的圆形
+	my_huabi.beginPath();
+	my_huabi.arc(200,180,20,0,1.5*Math.PI);//x,y表示圆心，r表示半径，开始的弧度，结束的弧度，顺时针和逆时针
+	my_huabi.closePath();
+	my_huabi.stroke();
+
+	//实心心的圆形
+	my_huabi.beginPath();
+	my_huabi.arc(300,180,20,0,2*Math.PI);
+	my_huabi.fill();
+  </script>
+ </body>
+</html>

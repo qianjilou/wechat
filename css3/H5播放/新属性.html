@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+  <title> new document </title>
+ <style>
+ input{
+	width:200px;
+ }
+ </style>
+ </head>
+
+ <body>
+   <form action = "index.php" method="post">
+   用户名：<input type="text" name="username" placeholder="请输入用户名" autofocus required><br/>
+   邮  件：<input type="email" name="email" placeholder="请输入邮件地址" required><br/>
+   地  名：<input type="url" name="add" placeholder="请输入地名" autocomplete required><br/>
+   信  息：<input type="week" name="date" placeholder="请输入信息" required><br/>
+   出生年份：<input type="date" name="date" placeholder="请输入信息" required><br/>
+   出生月份：<input type="month" name="date" placeholder="请输入信息" required><br/>
+   电话号码：<input type="number" name="date" placeholder="请输入信息" required><br/>
+   出生月份：<input type="range" min="1" max="10" name="date" placeholder="请输入信息" required><br/>
+   出生月份：<input type="color"placeholder="请输入信息" required><br/>
+   地区：<select>
+		<optgroup label="北京">
+			<option>东城区</option>
+			<option>西城区</option>
+			<option>海淀区</option>
+		</optgroup>
+			<optgroup label="成都">
+			<option>青羊区</option>
+			<option>金牛区</option>
+			<option>未央区</option>
+		</optgroup>
+	
+	     </select><br/>
+   选择车型:
+		<input type="text" list="cars">
+		<datalist id="cars">
+		<option>宝马<option>
+		<option>大众<option>
+		<option>奥迪<option>
+		</datalist><br/>
+   <input type="submit" value="提交表单">
+   </form>
+ </body>
+</html>
