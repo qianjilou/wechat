@@ -7,3 +7,5 @@ jd_banner
 链接：http://pan.baidu.com/s/1hsBXzCC 
 
 密码：jatc
+
+微信聊天室
